@@ -1,26 +1,32 @@
+
+
 fun main() {
 
-    val read= readLine()
-    val arr = intArrayOf()
-    bubbleSort(arr)
-    println("Sorted array")
-    printArray(arr)
+    val read= readLine()!!
+    val arr = (read.split(" "))
+
+
+    val listOfInt= Array(arr.size){
+        arr[it].toInt()
+    }
+    listOfInt.sort()
+    printArray(listOfInt)
+    println()
+    printTypedArray(arr)
 
 }
 
-
-fun bubbleSort(arr: IntArray) {
+fun printArray(arr: Array<Int>) {
     val n = arr.size
-    for (i in 0 until n - 1) for (j in 0 until n - i - 1) if (arr[j] > arr[j + 1]) {
-        // swap arr[j+1] and arr[j]
-        val temp = arr[j]
-        arr[j] = arr[j + 1]
-        arr[j + 1] = temp
+    for (i in 0 until n) {
+        println(arr[i])
     }
 }
 
-fun printArray(arr: IntArray) {
+
+fun printTypedArray(arr: List<String>) {
     val n = arr.size
-    for (i in 0 until n) print(arr[i].toString() + " ")
-    println()
+    for (i in 0 until n) {
+        println(arr[i])
+    }
 }
