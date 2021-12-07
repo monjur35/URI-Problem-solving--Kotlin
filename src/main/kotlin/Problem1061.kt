@@ -14,29 +14,23 @@ fun main() {
     val endMins=endTimes[1].trim().toInt()
     val endSec=endTimes[2].trim().toInt()
 
-    startSec=endSec-startSec
-    startMins=endMins-startMins
-    startHrs=endHrs-startHrs
-    startDay=endtDay-startDay
+
+   val day1=startSec+(startMins*60)+(startHrs*3600)+(startDay*86400)
+    val day2=endSec+(endMins*60)+(endHrs*3600)+(endtDay*86400)
+
+    var diff=day2-day1
 
 
-    if (startSec<0){
-        startSec+=60
-        println("$startSec segundo(s)")
-        startMins--
-    }
-    if (startMins<0){
-        startMins+=60
-        startHrs--
-    }
-    if (startHrs<0){
-        startHrs+=24
-        startDay--
-    }
+    var day=diff/86400
+    diff %= 86400
+    var hrs=diff/3600
+    diff%=3600
+    var min=diff/60
+    diff%=60
+    var sec=diff
 
-
-    println("$startDay dia(s)")
-    println("$startHrs hora(s)")
-    println("$startMins minuto(s)")
-    println("$startSec segundo(s)")
+    println("$day dia(s)")
+    println("$hrs hora(s)")
+    println("$min minuto(s)")
+    println("$sec segundo(s)")
 }
