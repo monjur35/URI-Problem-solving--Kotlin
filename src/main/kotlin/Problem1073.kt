@@ -1,4 +1,4 @@
-import java.lang.Math.pow
+
 import kotlin.math.pow
 
 fun main() {
