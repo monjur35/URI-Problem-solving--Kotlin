@@ -1,7 +1,12 @@
 fun main() {
 
-    var i=0.0
-    var j=1.0
+    var i= 0.0
+    var j :Double
+    var p=0
+
+    for (i in  0 until 2){
+
+    }
 
 
 }
