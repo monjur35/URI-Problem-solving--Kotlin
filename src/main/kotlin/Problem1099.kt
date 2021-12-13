@@ -18,7 +18,6 @@ fun main() {
             }
         }
     }
-
 }
 private fun summ(a :Int,b:Int) {
     var sum=0
