@@ -1,21 +1,16 @@
 fun main() {
 
-    var n= readLine()!!.toInt()
+    var n = readLine()!!.toInt()
 
+    var a = 1
+    var b = 1
+    for (i in 1..n) {
+        var c=a*b
+        println("$a $b $c")
+        println("$a ${++b} ${c+1}")
 
-    for (i in 1..n){
-        print("$i ")
-        for (j in 1..2){
-
-            if (j==1){
-                print("${i*i} ")
-            }
-            else if (j==2){
-                print("${i*i*i}")
-                println()
-            }
-
-        }
+        a++
+        b+=i*2
 
     }
 }
