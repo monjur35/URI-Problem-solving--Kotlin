@@ -6,9 +6,6 @@ fun main() {
 
     if (n<46){
         for (i in 1..n){
-
-
-
             if (i==1){
                 n1=0
                 print("$n1")
@@ -31,8 +28,7 @@ fun main() {
             else{
                 print(" ")
             }
-
-
+            //nothings
 
         }
     }
