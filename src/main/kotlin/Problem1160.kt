@@ -11,8 +11,8 @@ fun main() {
         var years=0
 
         while (a<=b){
-            a += ((a * g1) / 100)
-            b += ((b * g2) / 100)
+            a += ((a * g1) / 100).toInt()
+            b += ((b * g2) / 100).toInt()
             years++
 
             if (years>100){
