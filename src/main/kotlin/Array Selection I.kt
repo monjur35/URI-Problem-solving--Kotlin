@@ -9,6 +9,7 @@ fun main() {
     for (j in 0..10){
         if (array[j]<=10){
             println("A[$j] = ${"%.1f".format(array[j])}")
+
         }
     }
 }
