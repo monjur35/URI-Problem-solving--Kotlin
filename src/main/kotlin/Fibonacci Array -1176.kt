@@ -1,7 +1,7 @@
 fun main() {
-    var array = Array<Int>(61){0}
-    var first=0
-    var second=1
+    var array = Array<Long>(61){0}
+    var first:Long=0
+    var second:Long=1
 
     for (i in 0..60){
         if (i==0){
@@ -11,7 +11,7 @@ fun main() {
             array[i]=1
         }
         else{
-            var next=first+second
+            var next=(first+second)
             array[i]=next
             first=second
             second=next
