@@ -23,6 +23,6 @@ fun main() {
     }
 
    // println("Menor valor: $value")
-   // println("Posicao: $index")
+    println("Posicao: $index")
 
 }
